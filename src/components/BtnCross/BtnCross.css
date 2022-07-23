@@ -1,0 +1,9 @@
+.cross {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 21px;
+  height: 20px;
+  background-image: url('../../assets/icons/cross.svg');
+  background-size: cover;
+}

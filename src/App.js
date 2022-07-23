@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+import HomePage from './pages/HomePage/HomePage';
+import AboutUs from './pages/AboutUs/AboutUs';
+import Roadmap from './pages/Roadmap/Roadmap';
+import BehindTheDesign from './pages/BehindTheDesign/BehindTheDesign'
+import Community from './pages/Community/Community';
+import Faq from './pages/Faq/Faq';
+import Team from './pages/Team/Team';
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <HomePage /> } />
+        <Route path='/aboutUs' element={ <AboutUs /> } />
+        <Route path='/roadmap' element={ <Roadmap /> } />
+        <Route path='/behind-the-Design' element={ <BehindTheDesign /> } />
+        <Route path='/join-us' element={ <Community /> } />
+        <Route path='/faq' element={ <Faq /> } />
+        <Route path='/team' element={ <Team /> } />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;

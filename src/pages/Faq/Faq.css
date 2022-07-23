@@ -1,0 +1,38 @@
+.main-faq {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/img/background-home.png');
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-faq h1 {
+  width: 970px;
+  margin-top: 60px;
+  padding-left: 8%;
+  color: white;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 9.3rem;
+  text-shadow:
+    0 0 0px #fff,
+    0 0 0px #fff,
+    0 0 0px #fff,
+    0 0 0px #fff,
+    0 0 0px #fff,
+    0 0 0px #fff,
+    0 0 2px #fff,
+    0 0 12px #fff;
+  margin-bottom: 30px;
+}
+
+.main-faq a {
+  color: white;
+  padding-left: 8%;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 5rem;
+  text-decoration: none;
+}
